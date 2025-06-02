@@ -7,9 +7,12 @@ requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115.12",
     "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
     "langchain-core>=0.3.63",
     "langgraph>=0.4.7",
+    "langgraph-cli>=0.2.10",
     "pydantic>=2.11.5",
     "python-dotenv>=1.1.0",
+    "typer>=0.16.0",
     "uvicorn>=0.34.3",
 ]

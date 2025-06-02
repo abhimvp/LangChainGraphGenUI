@@ -28,4 +28,18 @@ $ uv add fastapi uvicorn pydantic
 ---
  uv add langchain-core langchain langgraph python-dotenv
 --- upTO-Now-added-7-dependencies we needed.
+uv add typer langgraph-cli
+# https://github.com/fastapi/typer
+$ uv add langchain-community
+---
+abhis@Tinku MINGW64 ~/Desktop/Langgraph/LangChainGraphGenUI/PythonGenUILangchain/backend (main)
+$ source .venv/Scripts/activate
+(backend)
+abhis@Tinku MINGW64 ~/Desktop/Langgraph/LangChainGraphGenUI/PythonGenUILangchain/backend (main)
+# $ activate the venv
 ```
+
+- create a `gen_ui_backend` folder : where we will write our langchain/graph code and server code ..etc
+  - `chain.py`: this is file where we implement langgraph chain.
+    - define the state of the chain(`GenerativeUIState`), which can be passed through to each of the nodes.
+    - Implement our graphFunction(`create_graph`) - which gives us an idea about different nodes and the flow our graph is going to take.
